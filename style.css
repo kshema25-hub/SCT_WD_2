@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(270deg, #1e3c72, #2a5298, #0f2027);
+  background-size: 600% 600%;
+  animation: bgMove 10s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  width: 360px;
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.time-display {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  padding: 10px;
+  border-radius: 15px;
+  background: rgba(0,0,0,0.2);
+  letter-spacing: 1px;
+}
+
+.time-display.running {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 10px #22c55e; }
+  50% { box-shadow: 0 0 25px #22c55e; }
+  100% { box-shadow: 0 0 10px #22c55e; }
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+#startBtn {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+#lapBtn {
+  background: linear-gradient(135deg, #38bdf8, #0284c7);
+}
+
+#resetBtn {
+  background: linear-gradient(135deg, #f97316, #ea580c);
+}
+
+button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+#laps {
+  list-style: none;
+  max-height: 160px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+#laps li {
+  background: rgba(255,255,255,0.2);
+  margin-bottom: 8px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  animation: slideIn 0.4s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
