@@ -1,82 +1,86 @@
 # SCT_WD_2
 📖 Project Overview
 
-The website highlights a tech company that provides:
+The Stopwatch Web App is designed to accurately measure elapsed time in hours, minutes, seconds, and milliseconds. It provides an intuitive interface and smooth functionality, making it useful for activities like workouts, study sessions, or productivity tracking.
 
-Web Development
-
-Mobile App Development
-
-Cloud Solutions
-
-AI & Automation Services
-
-This project focuses on user experience, responsive design, and UI interactivity, ensuring the website looks professional across all devices.
+This project emphasizes logic building, event handling, and real-time UI updates using JavaScript.
 
 ✨ Features
 
-✔️ Fully responsive design (Mobile, Tablet, Desktop)
-✔️ Sticky navigation bar with smooth scrolling
-✔️ Scroll progress indicator at the top
-✔️ Typing text animation on the homepage
-✔️ Section reveal animations on scroll
-✔️ Interactive service cards with hover effects
-✔️ Team member profile cards
-✔️ Company statistics/achievement section
-✔️ Back-to-top floating button
-✔️ Modern UI with gradients, shadows, and transitions
+✔️ Start the stopwatch
+✔️ Pause/Stop the stopwatch
+✔️ Reset time to zero
+✔️ Record lap times
+✔️ Real-time time display updates
+✔️ Responsive design for all devices
+✔️ Clean and modern user interface
+✔️ Smooth button interactions
 
 🛠️ Technologies Used
 Technology	Description
-HTML5	Used for creating the structure and content of the website
-CSS3	Used for styling, layout (Flexbox & Grid), animations, and responsiveness
-JavaScript	Used for interactivity, scroll effects, typing animation, and dynamic UI behavior
+HTML5	Structure of the stopwatch interface
+CSS3	Styling, layout, and responsive design
+JavaScript	Time calculations, DOM manipulation, and functionality
 📂 Folder Structure
-Task-1-Responsive-Website/
+Task-2-Stopwatch-App/
 │
-├── index.html        # Main webpage structure
-├── style.css         # Styling, layout, animations
-├── script.js         # JavaScript for interactivity
-└── assets/           # Images and icons used in the project
+├── index.html      # Structure of the stopwatch UI
+├── style.css       # Styling and layout design
+├── script.js       # Stopwatch logic and functionality
+└── assets/         # Icons or additional design resources (if any)
+
+⚙️ How It Works
+
+JavaScript uses setInterval() to update time every few milliseconds
+
+Time is calculated and displayed in HH : MM : SS : MS format
+
+Event listeners handle Start, Pause, Reset, and Lap button actions
+
+Lap times are dynamically added to the lap list
 
 🎯 Learning Outcomes
 
-Through this project, I gained hands-on experience in:
+Through this project, I learned how to:
 
-Building multi-section responsive layouts
+Work with time-based JavaScript functions (setInterval, clearInterval)
 
-Creating smooth animations using CSS and JavaScript
+Implement event listeners for user interactions
 
-Implementing scroll-based effects and transitions
+Update the UI dynamically using DOM manipulation
 
-Designing interactive UI components
+Build real-time interactive web applications
 
-Structuring a professional business-style website
+Structure clean and maintainable frontend code
 
 🖥️ How to Run This Project
 
-Download or clone this repository
+Download or clone the repository
 
 git clone https://github.com/your-username/your-repo-name.git
 
 
 Open the project folder
 
-Double-click on index.html
-or open it using Live Server in VS Code
+Open index.html in your browser
+or run using Live Server in VS Code
 
-That’s it! The website will run in your browser 🎉
-
-📸 Use Case
-
-This project demonstrates the ability to create modern, responsive, and interactive business websites using only frontend technologies. It reflects real-world UI/UX design practices used in professional company websites.
+The stopwatch will be ready to use ⏳
 
 🚀 Future Improvements
 
-Add a contact form with backend integration
+Add dark mode
 
-Improve accessibility (ARIA labels & keyboard navigation)
+Add sound effects for button clicks
 
-Add dark mode toggle
+Store lap history using Local Storage
 
-Optimize performance and images
+Add countdown timer feature
+
+🤝 Acknowledgment
+
+This project was developed as part of Task 2 under the guidance of SkillCraft Technology to improve hands-on skills in JavaScript and frontend development.
+
+🔗 Connect With Me
+
+If you found this project interesting, feel free to connect with me and explore my other work!
